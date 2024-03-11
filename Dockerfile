@@ -1,7 +1,7 @@
-FROM python:3.11
+FROM python:3.11-slim-buster
 
-WORKDIR /the/workdir/path
+WORKDIR /app
 
 COPY . .
 
-ENTRYPOINT [ "executable", "main" ]
+ENTRYPOINT [ "python", "Bot.py" ]
